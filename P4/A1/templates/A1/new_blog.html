@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Blog</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+      <!--ckEditor cdn-->
+      <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+</head>
+<body style="background-color: #f2f2f2">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand ml-5" href="#">BlogSpot</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+  </nav>
+
+  <section id="action" class="py-4 mb-4" style="background-color: #2980b9">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mr-auto">
+          <a href="#" class="btn btn-light btn-block"><i class="fas fa-arrow-left mr-2"></i>Back to Dashboard</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-light btn-block">Save Changes</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-light btn-block">Delete Post</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="post">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>New Post</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="title">Blog Title</label>
+                  <input type="text" class="form-control" placeholder="Title">
+                </div>
+
+                <div class="form-control">
+                  <label for="file">Image Upload</label>
+                  <input type="file" class="form-control-file pt-3 pb-2">
+                </div>
+
+                <div class="form-group mt-3">
+                  <label>Page Body</label>
+                  <textarea name="editor1" class="form-control" placeholder="Page Body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+  CKEDITOR.replace( 'editor1' );
+</script>
+</html>
